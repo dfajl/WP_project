@@ -1,0 +1,4 @@
+[1010/090226.805:ERROR:process_info.cc(359)] UncheckedAllocate
+[1010/090239.160:ERROR:process_info.cc(359)] UncheckedAllocate
+[1010/090250.346:ERROR:process_info.cc(359)] UncheckedAllocate
+[1010/092316.252:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)

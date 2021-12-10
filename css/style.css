@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box; /* для всего документа задал размер каждого элемента-блока с учетом марджинов и падингов */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+ html {
+    font-family: 'Roboto', sans-serif;
+ }
+
+
+
+.promo {
+    height: 800px;
+    background: url("../img/2-layers.jpg") center center/cover no-repeat;
+    padding: 39px 0 62px 0 ;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.logo .logo_img {
+    display: block;
+    margin:  0 auto;
+}
+
+.logo .logo_text {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 14px;
+}
+
+h1 {
+    margin-top: 53px;
+}
+
+h2.title {
+    margin-top: 30px;
+}
+
+.title  {
+    color: #f9bf3b;
+    
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.simple .title_big {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 21px;
+}
+
+.promo .promo_text {
+    margin-top: 23px;
+    padding: 0 13px;
+    color: #ffffff;
+   
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.promo .promo_text span {
+    color: #f9bf3b;
+    font-weight: 700;
+}
+
+.promo .promo_btn, .present .present_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 73px;
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    }
+
+    .present .present_btn {
+        margin-top: 52px;
+    }
+
+.more {
+    margin-top: 73px;     
+    }
+
+.more .more_text {
+    color: #ffffff;
+    
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.waiting {
+    min-height: 604px; /* таким образом я задал такую высоту, которая будет изменяться в случае изменения контента на сайте */
+    background-color: #efefef;
+    padding: 85px 0 75px 0;
+}
+
+.waiting .waiting_header, .finish .finish_header { 
+    color: #252525;
+    
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.finish .finish_header {   /* по умолчанию, мой заголовок прописался темным шрифтом, как показано выше. но так как я прописал отдельный стиль для цвета заголовка, который расположен по главным, то я применил к нему другой цвет - белый  */
+    color: #fff;
+}
+
+.waiting .waiting_line, .finish .finish_line {
+    width: 217px;
+    height: 4px;
+    background-color: #e6a612;
+    margin: 0 auto;
+    margin-top: 18px;
+
+}
+
+.waiting .waiting_subheader {
+    margin-top: 17px;
+    color: #4a4a4a;
+    
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;}
+    
+.waiting .waiting_wrapper {
+    display: flex; /* задал родительскому диву свойство "флекс", которое позволяет распределять элементы равномерно */
+    justify-content: space-between; /* это свойство помогает равномерно распределять элементы по всему диву */
+    margin-top: 45px;
+}    
+
+.waiting .waiting_wrapper .waiting_item {
+
+    width: 339px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+    width: 100%;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+    margin-top: 33px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+
+/* .my_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+}
+
+.my_flex_block {
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+    text-align: center;
+    color: black;
+    margin: 0 50px;
+} ТРЕНИРОВАЛСЯ С ФЛЕКСБОКСАМИ*/
+
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+
+}
+
+.optimization .optimization_header {
+    margin-left: 391px;
+    color: #299cbd;
+    
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 12px;
+    text-transform: uppercase;
+    
+    }
+
+    .optimization .optimization_text {
+    margin-left: 391px;
+    margin-top: 25px;
+    color: #4a4a4a;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+    
+    
+    font-weight: 300;
+    }
+
+    .optimization .optimization_text span {
+    
+    font-weight: 700;
+    }
+    
+
+    .optimization .optimization_img {
+        position: absolute;
+        top: -54px;
+        left: -240px;
+        z-index: -1;
+    }
+
+    .finish {
+        min-height: 447px;
+        padding: 86px 0 79px 0;
+        background: url("../img/Layer_33.jpg") center center/cover no-repeat;
+    }
+
+    .finish .finish_wrapper {
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .finish .finish_wrapper .finish_item {
+        width: 204px;
+    }
+
+    .finish .finish_wrapper .finish_item .finish_round {
+
+          /* данный блок (кружочек) является родителем для  иконки, лежащей в нем, установив родителю св-во флекс, я отцентрую по вертикали и горизонтали иконку, лежащую в кружке */
+        display:flex; /* для помещения иконок по центру кружков */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* каждый кружок встал по центру каждого айтема */
+        width: 115px;
+        height: 115px;
+        background-color: #b4e2ff;
+        border-radius: 100%;
+    }
+
+    .finish .finish_wrapper .finish_item .finish_descr {
+        margin-top: 25px;
+        color: #efefef;
+        
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center; /* текст встал по центру относительно каждого айтема */
+    } 
+
+    .present {
+        min-height: 628px;
+        padding: 86px 0 87px 0;
+        background-color: #efefef;
+    }
+
+    .present .present_up {
+        padding-left: 526px;
+        padding-right: 503px;
+    }
+
+    .present .present_down {
+        padding-left: 493px;
+        padding-right: 493px;
+    }
+
+    .present .present_text {
+    margin-top: 42px;
+     color: #252525;
+    
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 43px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    }
+
+    .first_web {
+        min-height: 515px;
+        padding: 89px 0 64px 0;
+    }
+
+    .first_web .first_png {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .first_web .text1 {
+        
+        color: #252525;
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        margin-top: 37px;
+    }
+
+    .first_web .text2 {
+    margin-top: 30px;
+    color: #299cbd;
+    
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "1, 0 сентя" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    }
+
+    .first_web .text3 { 
+    margin-top: 25px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "Успейте за" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    } 
+
+    .footer {
+        min-height: 166px;
+        padding: 61px 0 69px 0;
+        background-color: #1a1a1a;
+    }
+    
+ .footer .anchor { 
+     padding-left:  382px;
+ }
+    
+
+
+     ul.inline li {
+         display: inline;
+         text-align: center;
+     }
+
+     .footer .inline .anchor_1 {
+        color: #888888;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 21px;
+        
+        text-decoration: underline;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+     }
+      .footer .footer_text {
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        color: #888888;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 21px;
+        text-align: center;
+        
+      }
