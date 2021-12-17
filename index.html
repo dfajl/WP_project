@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- это файл для оптимизации стилей под разные браузеры -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> --> <!-- подключил шрифты с гугла -->
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                 И только единицы из них становятся популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!
             </div>
 
-            <button class="promo_btn"> Записаться на интенсив! </button>
+            <button class="btn"> Записаться на интенсив! </button>
 
             <div class="more">
                 <div class="more_text"> Узнать больше от интенсиве </div>
@@ -200,7 +200,7 @@
 
                         </div>
 
-                        <button class="present_btn"> Записаться на интенсив! </button>
+                        <button class="btn"> Записаться на интенсив! </button>
 
                     </div>
 
@@ -222,30 +222,38 @@
             </section>
 
             <section class="footer">
-
-                     <div class="container">
+                    <div class="container">
 
                         <div class="anchor">
-
                             <ul class="inline">
                             <li> <a href="#" class="anchor_1"> Служба поддержки </a> </li>
                             <li> <a href="#" class="anchor_1"> | </a> </li>
                             <li> <a href="#" class="anchor_1"> Политика конфиденциальности </a> </li>
-                            </ul>
-                                 
+                            </ul>                   
                         </div>
 
                         <div class="footer_text"> Позвоните нам 8-800-555-01-21 </div>
 
-                     </div> 
-
-
-
+                    </div> 
             </section>
+
+            <div class="overlay fade" >
+                <div class="modal">
+                    <div class="close"> &times; </div>
+                    <form>
+                        <input class = "form_element" type="text" placeholder="Ваше имя" required>
+                        <input class = "form_element" type="text" placeholder="Ваша фамилия" required>
+                        <input class = "form_element" type="tel" placeholder="Ваш телефон" required>
+                        <input class = "form_element" type="email" placeholder="Ваш е-mail" required>
+                        <button class = "form_element"> записаться на интенсив </button>
+                    </form>
+                </div>
+            </div>
+            
 
                 
 
-
+<script src="js/script.js"></script>
 
 </body>
 

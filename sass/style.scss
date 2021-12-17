@@ -4,12 +4,74 @@
     padding: 0;
 }
 
-
-
-
- html {
+html {
     font-family: 'Roboto', sans-serif;
- }
+}
+
+/* Стили для модального окна */
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    top: 0;
+}
+
+.modal {
+    padding-top: 20px;
+    width: 30%;
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .close {
+        cursor: pointer;
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        color: red;
+        font-size: 30px;
+        transition: 0.6s all;
+        &:hover {
+            font-size: 35px;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .form_element {
+            margin: 0 auto;
+            height: 35px;
+            width: 80%;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: 0.6s all;
+            &:last-child {
+                text-transform: uppercase;
+                &:hover {
+                    cursor: pointer;
+                    color: rgba(255, 0, 0, 0.712);
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+/* Стили для модального окна */
+
 
 
 
@@ -29,6 +91,7 @@
     display: block;
     margin:  0 auto;
 }
+
 
 .logo .logo_text {
     color: #ffffff;
@@ -86,7 +149,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn, .present .present_btn {
+.promo .btn, .present .btn {
     display: block;
     margin: 0 auto;
     margin-top: 73px;
