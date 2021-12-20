@@ -1,0 +1,70 @@
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    top: 0;
+}
+.modal {
+    padding-top: 20px;
+    width: 30%;
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .close {
+        cursor: pointer;
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        color: red;
+        font-size: 30px;
+        transition: 0.6s linear;
+        &:hover {
+            animation-name: popUpClose;
+            animation-duration: 0.8s;
+            animation-fill-mode: forwards; //анимация остановилась в последней точке и не возвращается в начальную
+
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .form_element {
+            margin: 0 auto;
+            height: 35px;
+            width: 80%;
+            margin-bottom: 20px;
+            text-align: center;
+            &:last-child {
+                transition: 0.6s all;
+                text-transform: uppercase;
+                &:hover {
+                    cursor: pointer;
+                    color: rgba(255, 0, 0, 0.712);
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+.invalid { /* валидация формы с e-mail */
+    border: 2px solid red;
+}
+.error { /* валидация формы с e-mail */
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(161, 39, 39);
+}
+
+// Animation
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+// Animation

@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', function () {
         input = document.getElementsByTagName('input'),
 		div = document.createElement('div'),
 		inputButton = document.getElementsByTagName('button')[2],
+		pageUp = document.querySelector('.page_up'),
+		finishItem = document.querySelectorAll('.finish_item');
         close = document.querySelector('.close');
 
 
@@ -41,26 +43,33 @@ window.addEventListener('DOMContentLoaded', function () {
 		  div.innerHTML = "";
 		}
 	});
-	
-   
-    
-
-    // onblur = function() {
-    //     if (!input.value.includes('@')) { 
-    //     input.classList.add('invalid');
-    //     error.innerHTML = 'Пожалуйста, введите правильный email.'
-    //     }
-    // };
-    
-    // input.onfocus = function() {
-    //     if (this.classList.contains('invalid')) {
-    //     // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
-    //     this.classList.remove('invalid');
-    //     error.innerHTML = "";
-    //     }
-    // };
 
     $('input[name=phone]').mask("+7 (999) 999-99-99"); // маска ввода номера
+
+
+	// smooth scroll and pageUp
+
+	window.addEventListener('scroll', function () {
+		if (document.documentElement.scrollTop > 800) {
+			pageUp.style.display = 'block';
+		} else {
+			pageUp.style.display = 'none';
+		}
+
+		if (document.documentElement.scrollTop > 1500) {
+			finishItem.forEach(function(item) {
+				item.classList.add('animate__fadeInLeft');
+			});
+		}
+	});
+
+	
+
+
+
+
+
+	
 
 
 });

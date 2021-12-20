@@ -1,91 +1,24 @@
+
+@import 'animations';
+@import 'modal';
+
+
 * {
     box-sizing: border-box; /* для всего документа задал размер каждого элемента-блока с учетом марджинов и падингов */
     margin: 0;
     padding: 0;
 }
 
+
+.animate__fadeInLeft { // из библиотеки animate.css
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+
 html {
     font-family: 'Roboto', sans-serif;
 }
-
-/* Стили для модального окна */
-.overlay {
-    display: none;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color:rgba(0, 0, 0, 0.6);
-    top: 0;
-}
-
-.modal {
-    padding-top: 20px;
-    width: 30%;
-    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    .close {
-        cursor: pointer;
-        position: absolute;
-        top: -25px;
-        right: -25px;
-        color: red;
-        font-size: 30px;
-        transition: 0.6s linear;
-        &:hover {
-            font-size: 35px;
-        }
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .form_element {
-            margin: 0 auto;
-            height: 35px;
-            width: 80%;
-            margin-bottom: 20px;
-            text-align: center;
-            
-            &:last-child {
-                transition: 0.6s all;
-                text-transform: uppercase;
-                &:hover {
-                    cursor: pointer;
-                    color: rgba(255, 0, 0, 0.712);
-                    font-size: 17px;
-                }
-            }
-        }
-    }
-}
-
-.invalid {
-    border: 2px solid red;
-}
-
-.error {
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(161, 39, 39);
-}
-
-// Animation
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-// Animation
-
-/* Стили для модального окна */
-
 
 .promo {
     height: 800px;
@@ -422,7 +355,7 @@ h2.title {
         margin-top: 37px;
     }
 
-    .first_web .text2 {
+.first_web .text2 {
     margin-top: 30px;
     color: #299cbd;
     
@@ -437,9 +370,14 @@ h2.title {
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    }
+    // анимация
+    animation-name: size;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
-    .first_web .text3 { 
+.first_web .text3 { 
     margin-top: 25px;
     color: #4a4a4a;
     font-family: Roboto;
@@ -453,26 +391,26 @@ h2.title {
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    } 
+} 
 
-    .footer {
-        min-height: 166px;
-        padding: 61px 0 69px 0;
-        background-color: #1a1a1a;
-    }
+.footer {
+    min-height: 166px;
+    padding: 61px 0 69px 0;
+    background-color: #1a1a1a;
+}
     
  .footer .anchor { 
-     padding-left:  382px;
+    padding-left:  382px;
  }
     
 
 
-     ul.inline li {
-         display: inline;
-         text-align: center;
-     }
+    ul.inline li {
+        display: inline;
+        text-align: center;
+    }
 
-     .footer .inline .anchor_1 {
+    .footer .inline .anchor_1 {
         color: #888888;
         font-family: Roboto;
         font-size: 15px;
@@ -485,8 +423,8 @@ h2.title {
         font-style: normal;
         letter-spacing: normal;
         line-height: normal;
-     }
-      .footer .footer_text {
+    }
+    .footer .footer_text {
         font-style: normal;
         letter-spacing: normal;
         line-height: normal;
@@ -499,4 +437,20 @@ h2.title {
         line-height: 21px;
         text-align: center;
         
-      }
+    }
+
+.page_up {
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 60px;
+    height: 60px;
+    img {
+        transition: 0.3s linear;
+        width: 100%;
+        &:hover {
+            width: 120%;
+        }
+    }
+}    
